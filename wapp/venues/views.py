@@ -6,6 +6,7 @@ from django.views import generic
 from django.utils import timezone
 from django.core.mail import EmailMessage
 from django.conf import settings
+from .models import Venues
 
 
 

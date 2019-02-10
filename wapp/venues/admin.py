@@ -6,5 +6,5 @@ class VenuesAdmin(admin.ModelAdmin):
     list_display = (
         'name', 'added', 'url', 'email')
 
-admin.site.register(Venues, VenuesAdmin)
 
+admin.site.register(Venues, VenuesAdmin)

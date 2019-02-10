@@ -12,7 +12,7 @@
 {% for i in data %}
 	<tr>
 	<td>
-    {{ i.name}}
+	<a href="http://127.0.0.1:8000/venues/venue_info?venue={{ i.name }}" target="_self">{{ i.name}}</a>  
 	</td>
 	<td>
 	<a href="{{ i.url }}" target="_blank">{{ i.url }}</a>

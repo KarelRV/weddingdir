@@ -14,5 +14,10 @@ def test(request):
 	return HttpResponse("Hello World.")
 
 def home(request):
-	return render(request, 'venues/list.html')
+	return render(request, 'venues/home.html')
+
+def view_venues(request):
+	data = Venues.objects.all()
+	print(data)
+	return render(request, 'venues/list.html', {'data' : data})
 

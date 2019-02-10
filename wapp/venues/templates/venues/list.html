@@ -1,5 +1,27 @@
 
 {% extends "navbar.html" %}
 {% block content %}
-<p> Hello World! </p>
+<table  class="table table-striped">
+	<thead>
+	<tr>
+    <th>Venue Name</th>
+    <th>Venue URL</th>
+    <th>Venue Email Adress</th>
+  	</tr>
+  	</thead>
+{% for i in data %}
+	<tr>
+	<td>
+    {{ i.name}}
+	</td>
+	<td>
+	<a href="{{ i.url }}" target="_blank">{{ i.url }}</a>
+    
+    </td>
+    <td>
+    <a href="mailto:{{ i.email }}">{{ i.email }}</a>
+    </td>
+	</tr>
+{% endfor %}
+</table>
 {% endblock %}
